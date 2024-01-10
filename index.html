@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess A Number</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/7/77/Question_mark-pixels.jpg" type="image/x-icon">
+</head>
+<body>
+    <!-- nav -->
+    <nav>
+        <Button class="gameButtons" id="againButton">
+            AGAIN!
+        </Button>
+        <Button class="gameButtons" id="rulesButton">
+            RULES
+        </Button>
+    </nav>
+
+    <!-- heading -->
+    <h1>Guess My Number !</h1>
+
+    <div class="divider">
+        <hr>
+        <Button class="qMark">
+            <span class="answer">?</span>
+        </Button>
+    </div>
+
+    <div class="gameControls">
+        <div class="gameBox1" id="gameInputBox">
+            <input type="number" placeholder=" Number..." class="numInput" >
+            <Button class="gameButtons" id="checkButton">CHECK!</Button>
+        </div>
+        <div class="gameBox1" id="gameOutputBox">
+            <span id="gameCommnt">🙂 Start guessing...</span>
+            <div>
+                <span>💯 Score: <span class="score"></span></span>
+                <span>🥇 High-Score: <span class="hScore"></span> </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" >
+        <hr>
+        <div class="rules">
+            <span>
+                Score starts at 20 and keeps decreasing by 1 for every wrong answer!
+                <br>
+                <br>
+                Can you guess the number before score reaches 0?
+                <br>
+                <br>
+                Guess the number between 1 and 20.
+            </span>
+            <div>
+                <p>Tap the box to close </p>
+                <p>or</p>
+                <p>Press ESC</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js">
+</script>
+</html>
